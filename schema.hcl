@@ -15,6 +15,10 @@ table "users" {
     type   = varchar(255)
     unique = true
   }
+  column "bio" {
+    type = text
+    unique = true
+  }
   primary_key {
     columns = [column.id]
   }
